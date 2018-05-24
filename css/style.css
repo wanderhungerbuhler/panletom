@@ -1,0 +1,61 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+img{width:100%;}
+body{font-family:"Open Sans", sans-serif; 
+    background:#0081c6;}
+
+@keyframes rot{
+    from {transform: rotate(1deg);}
+    to {transform: rotate(-2deg);}
+}
+
+/* MENU */
+.container{width: 50%; margin:100px auto;}
+.panletom{width: 350px; height: 200px; display: flex; align-items: center; margin:0 auto;
+background: url('../images/logo.svg') no-repeat center center; background-size:100%}
+.panletom:hover{cursor: pointer; animation: rot .1s  infinite;
+    background: url('../images/logo-hover.svg') no-repeat center center; background-size:100%;}
+
+/* CONTADOR */
+.contador h1{
+    font-size:1.5em;
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+    margin-top:20px;
+    letter-spacing: -1px;
+    color:#fff;
+    font-weight: 300;
+    /* text-transform: uppercase; */
+}
+
+.aga{font:1.0em "Permanent Marker", sans-serif;}
+
+.contador span{
+    font:3em "Permanent Marker", sans-serif;
+    text-align: center;
+    margin-top:15px;
+    color:#fff;
+    display: block;
+    font-weight: bold;
+}
+
+.btn{
+    width: 60%;
+    display: block;
+    padding:1em;
+    margin:18px auto;
+    border:0;
+    border-bottom:4px solid #bebebe;
+    background: #fff;
+    color:#0081c6;
+    border-radius:5px;
+    font-weight: bold;
+    font-size:1em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    margin:20px auto;
+    border:0;
+    transition: .2s ease-in-out;
+}
